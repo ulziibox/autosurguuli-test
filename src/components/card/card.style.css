@@ -1,0 +1,36 @@
+.card-body {
+    background: #252836;
+    border-radius: 13px; 
+    padding: 5px 15px 0 15px;
+    cursor: pointer;
+    transition: 0.25s ease-out;
+    min-height: 140px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-body:hover{
+    /* transform: translateY(-1px); */
+    background: #414557;
+}
+
+.card-title, .card-footer {
+    font-size: 12px;
+    color: #AEAEAE;
+    font-weight: 500;
+}
+
+.card-name {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card-footer {
+    bottom: 0;
+    position: absolute;
+}

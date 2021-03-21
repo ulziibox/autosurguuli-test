@@ -1,0 +1,17 @@
+.answer-btn {
+    border: none;
+    background: #242230;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    max-width: 700px;
+}
+
+.answer-btn:hover {
+    background: #373641;
+}

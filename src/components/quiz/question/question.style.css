@@ -1,0 +1,28 @@
+.title {
+    color: #FFFFFF;
+   
+    display: flex;
+}
+
+.title-code {
+    color: #AFAFAF;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.title-question {
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+img {
+    border-radius: 6px;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+}

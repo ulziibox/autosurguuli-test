@@ -1,0 +1,8 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: #1F1D2B; */
+    padding: 0;
+    margin: 0;
+}
