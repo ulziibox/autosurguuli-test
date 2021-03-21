@@ -15,3 +15,19 @@
 .answer-btn:hover {
     background: #373641;
 }
+
+.anwser-btn-correct {
+    background: #227740;
+}
+
+.anwser-btn-wrong {
+    background: #792931;
+}
+
+.anwser-btn-correct:hover {
+    background: #227740;
+}
+
+.anwser-btn-wrong:hover {
+    background: #792931;
+}
