@@ -1,8 +1,61 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: #1F1D2B; */
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.Toastify__toast {
+  font-family: "Roboto", sans-serif !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.Toastify__close-button {
+  color: #28323f !important;
+  margin-top: 7px !important;
+}
+
+.Toastify__progress-bar {
+  background-color: rgba(40, 50, 63, 0.199) !important;
+}
+
+.Toastify__toast {
+  padding-top: 0px !important;
+}
+
+.Toastify__toast--warning {
+  background: #fcf6e6 !important;
+  color: #28323f !important;
+  border: 1px solid #dab857 !important;
+  padding-top: 0 !important;
+  padding-left: 35px !important;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.02975 3.3437C10.9834 2.88543 13.0166 2.88543 14.9703 3.3437C17.7916 4.00549 19.9945 6.20842 20.6563 9.02975C21.1146 10.9834 21.1146 13.0166 20.6563 14.9703C19.9945 17.7916 17.7916 19.9945 14.9703 20.6563C13.0166 21.1146 10.9834 21.1146 9.02975 20.6563C6.20842 19.9945 4.0055 17.7916 3.3437 14.9703C2.88543 13.0166 2.88543 10.9834 3.3437 9.02974C4.0055 6.20841 6.20842 4.00549 9.02975 3.3437ZM12 10.0854C12.5287 10.0854 12.9573 9.65681 12.9573 9.12812C12.9573 8.59942 12.5287 8.17083 12 8.17083C11.4713 8.17083 11.0427 8.59942 11.0427 9.12812C11.0427 9.65681 11.4713 10.0854 12 10.0854ZM12 10.8034C12.3965 10.8034 12.7179 11.1248 12.7179 11.5213V15.3505C12.7179 15.747 12.3965 16.0684 12 16.0684C11.6035 16.0684 11.282 15.747 11.282 15.3505V11.5213C11.282 11.1248 11.6035 10.8034 12 10.8034Z' fill='%23E4A10B'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: left 5px center !important;
+}
+
+.Toastify__toast--success {
+  background: #ebf7ee !important;
+  color: #28323f !important;
+  border: 1px solid #c5e8ce !important;
+  padding-top: 0 !important;
+  padding-left: 35px !important;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.02975 3.3437C10.9834 2.88543 13.0166 2.88543 14.9703 3.3437C17.7916 4.00549 19.9945 6.20842 20.6563 9.02975C21.1146 10.9834 21.1146 13.0166 20.6563 14.9703C19.9945 17.7916 17.7916 19.9945 14.9703 20.6563C13.0166 21.1146 10.9834 21.1146 9.02975 20.6563C6.20842 19.9945 4.0055 17.7916 3.3437 14.9703C2.88543 13.0166 2.88543 10.9834 3.3437 9.02974C4.0055 6.20841 6.20842 4.00549 9.02975 3.3437ZM15.0524 10.4773C15.2689 10.2454 15.2563 9.88195 15.0244 9.6655C14.7925 9.44906 14.4291 9.46159 14.2126 9.6935L11.2678 12.8487L9.77358 11.3545C9.54927 11.1302 9.1856 11.1302 8.9613 11.3545C8.73699 11.5788 8.73699 11.9425 8.9613 12.1668L10.8759 14.0814C10.986 14.1915 11.1362 14.2522 11.2919 14.2495C11.4477 14.2468 11.5956 14.181 11.7019 14.0671L15.0524 10.4773Z' fill='%233FBE61'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: left 5px center !important;
+}
+
+.Toastify__toast--error {
+  background: #fcedea !important;
+  color: #28323f !important;
+  border: 1px solid #f7d1c9 !important;
+  padding-top: 0 !important;
+  padding-left: 35px !important;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.02975 3.3437C10.9834 2.88543 13.0166 2.88543 14.9703 3.3437C17.7916 4.00549 19.9945 6.20842 20.6563 9.02975C21.1146 10.9834 21.1146 13.0166 20.6563 14.9703C19.9945 17.7916 17.7916 19.9945 14.9703 20.6563C13.0166 21.1146 10.9834 21.1146 9.02975 20.6563C6.20842 19.9945 4.0055 17.7916 3.3437 14.9703C2.88543 13.0166 2.88543 10.9834 3.3437 9.02974C4.0055 6.20841 6.20842 4.00549 9.02975 3.3437ZM10.7139 9.90158C10.4896 9.67727 10.1259 9.67727 9.90158 9.90158C9.67727 10.1259 9.67727 10.4896 9.90158 10.7139L11.1877 12L9.90158 13.2861C9.67727 13.5104 9.67727 13.8741 9.90158 14.0984C10.1259 14.3227 10.4896 14.3227 10.7139 14.0984L12 12.8123L13.2861 14.0984C13.5104 14.3227 13.8741 14.3227 14.0984 14.0984C14.3227 13.8741 14.3227 13.5104 14.0984 13.2861L12.8123 12L14.0984 10.7139C14.3227 10.4896 14.3227 10.1259 14.0984 9.90158C13.8741 9.67727 13.5104 9.67727 13.2861 9.90158L12 11.1877L10.7139 9.90158Z' fill='%23EC4E2C'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: left 5px center !important;
 }

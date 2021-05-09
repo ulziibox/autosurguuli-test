@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React from "react";
 import {TopicCard} from "../components/card";
 import topics from '../data/topic';
 import Header from "../components/header";

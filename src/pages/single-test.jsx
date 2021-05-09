@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import topic from '../data/topic';
 import tests from '../data/test';
-import answers from '../data/answer';
+// import answers from '../data/answer';
 import Header from "../components/header"
 import Footer from "../components/footer";
 
@@ -28,7 +28,7 @@ const SingleTest = () => {
 
     return (
         <>
-        <Header title={topicTestTitle} type={"examTest"}/>
+        <Header title={topicTestTitle}/>
         <div className="single-test-body">
             <div className="container">
                 {/* <a>{topicInfo.id}: {topicInfo.topics_name}</a> */}
