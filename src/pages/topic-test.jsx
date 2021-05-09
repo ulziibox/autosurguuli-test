@@ -1,9 +1,15 @@
 import React, { useState, useEffect} from "react";
 import {TopicCard} from "../components/card";
 import topics from '../data/topic';
+import Header from "../components/header";
+import Footer from "../components/footer";
+
 import "./style.css";
+
 const TopicTest = () => {
     return (
+        <>
+        <Header title={"Сэдвийн тест"}/>
         <div className="topic-body">
             <div className="container">
                 <div className="topic-cards">
@@ -13,6 +19,8 @@ const TopicTest = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 };
 

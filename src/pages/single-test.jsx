@@ -4,6 +4,8 @@ import { Redirect } from "react-router-dom";
 import topic from '../data/topic';
 import tests from '../data/test';
 import answers from '../data/answer';
+import Header from "../components/header"
+import Footer from "../components/footer";
 
 import "./style.css";
 
@@ -19,12 +21,17 @@ const SingleTest = () => {
     }
     const topicInfo = topic.find(({ id }) => id === topicId);
     const topicTest = tests.filter(el => el.topics_id === topicId);
-   
+    
+    const topicTestTitle = topicInfo.id + '. ' + topicInfo.topics_name;
+
+    // console.log(topicTestTitle);
 
     return (
+        <>
+        <Header title={topicTestTitle} type={"examTest"}/>
         <div className="single-test-body">
             <div className="container">
-                <a>{topicInfo.id}: {topicInfo.topics_name}</a>
+                {/* <a>{topicInfo.id}: {topicInfo.topics_name}</a> */}
                 {topicTest.map((el, index) => (
                     <Quiz 
                         key={el.id}
@@ -35,9 +42,14 @@ const SingleTest = () => {
                         imageURL={el.images}
                         description={el.description}
                     />
-                ))}   
+                ))} 
+                <div className="no-more">
+                    <p>Асуулт дууссан</p>    
+                </div>  
             </div>
         </div>
+        <Footer/>
+        </>
     )
 };
 
