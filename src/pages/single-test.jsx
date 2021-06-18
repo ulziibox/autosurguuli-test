@@ -42,10 +42,10 @@ const SingleTest = () => {
                         imageURL={el.images}
                         description={el.description}
                     />
-                ))} 
+                ))}
                 <div className="no-more">
-                    <p>Асуулт дууссан</p>    
-                </div>  
+                    <p>Асуулт дууссан</p>
+                </div>
             </div>
         </div>
         <Footer/>
