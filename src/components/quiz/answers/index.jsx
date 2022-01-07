@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import "./answers.style.css";
 import answers from '../../../data/answer'
 import correct from '../../../data/correct'
@@ -10,7 +10,9 @@ export const Answers = (props) => {
   const [showedDesc, setShowedDesc] = useState(false)
 
   function QuestionDescription() {
-    const desc = data[props.testId]?.desc;
+    const QuestionId = data.findIndex(d => d.id === props.testId);
+    let desc = data[QuestionId]?.desc
+
     return (
       <>
       {desc ? 
